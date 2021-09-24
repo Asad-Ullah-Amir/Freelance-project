@@ -1,0 +1,1985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utility.css">
+    <link rel="stylesheet" href="/css/second_page.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .menubar {
+            width: 100vw !important;
+            padding: 0 !important;
+            position: absolute;
+            top: 7rem;
+            background-color: white;
+            display: none;
+            z-index: 100;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            margin-left: .5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        ul li {
+            margin: 0 !important;
+            /* background-color: cadetblue; */
+            list-style: none;
+            padding: .2rem 1rem;
+            border-bottom: .7px solid rgb(226, 207, 207);
+            text-transform: capitalize;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgb(187, 146, 146);
+        }
+
+        .lower_part ul li a {
+            padding-left: .5rem;
+        }
+
+        .menubar li {
+            position: relative;
+        }
+
+        li i {
+            position: absolute;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menubar" id="menuBar">
+        <div class="upper_part">
+            <ul>
+                <li
+                    style="background-color: #FFE1AF; font-family: var(--font3); font-size: .8rem;padding: .4rem; display: flex; justify-content: center; align-items: center; border-top: .7px solid rgb(202, 180, 180); border-bottom: .7px solid rgb(202, 180, 180);">
+                    <img class="img star" src="../img/star.png" height="15px" width="15px" alt="">
+                    <span style="margin-left: .3rem; color: rgb(153, 126, 126);">Mei Compaitiano</span>
+                </li>
+                <li class="li">
+                    <img class="image" src="https://www.countryflags.io/AK/shiny/64.png" height="15px" width="15px">
+                    <a href="#">lingu 1</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li">
+                    <img class="image" src="https://www.countryflags.io/BG/shiny/64.png" height="15px" width="15px">
+                    <a href="#">premier league</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li">
+                    <img class="image" src="https://www.countryflags.io/BL/shiny/64.png" height="15px" width="15px">
+                    <a href="#">serie a</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li">
+                    <img class="image" src="https://www.countryflags.io/BF/shiny/64.png" height="15px" width="15px">
+                    <a href="#">serie b</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li">
+                    <img class="image" src="https://www.countryflags.io/BQ/shiny/64.png" height="15px" width="15px">
+                    <a href="#">coppa italia</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li">
+                    <img class="image" src="https://www.countryflags.io/CG/shiny/64.png" height="15px" width="15px">
+                    <a href="#">eredivisie</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li">
+                    <img class="image" src="https://www.countryflags.io/CI/shiny/64.png" height="15px" width="15px">
+                    <a href="#">laLiga</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li">
+                    <img class="image" src="https://www.countryflags.io/DE/shiny/64.png" height="15px" width="15px">
+                    <a href="#">europei</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li">
+                    <img class="image" src="https://www.countryflags.io/ET/shiny/64.png" height="15px" width="15px">
+                    <a href="#">champions league</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li">
+                    <img class="image" src="https://www.countryflags.io/GE/shiny/64.png" height="15px" width="15px">
+                    <a href="#">europa league</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li">
+                    <img class="image" src="https://www.countryflags.io/HN/shiny/64.png" height="15px" width="15px">
+                    <a href="#">mondiali</a>
+                    <i class="fas fa-times"></i>
+                </li>
+            </ul>
+        </div>
+
+        <div class="lower_part" style="margin-top: 1rem;">
+            <ul>
+                <li
+                    style="background-color: #FFE1AF; font-family: var(--font3); font-size: .8rem;padding: .4rem; display: flex; justify-content: center; align-items: center; border-top: .7px solid rgb(202, 180, 180); border-bottom: .7px solid rgb(202, 180, 180);">
+                    <img class="img star" src="../img/star.png" height="15px" width="15px" alt="">
+                    <span style="margin-left: .3rem; color: rgb(153, 126, 126);">Mei Compaitiano</span>
+                </li>
+                <li class="li_2">
+                    <a href="#">albania</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">algeria</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">andorra</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">angola</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">arabia saudita</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">argentina</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">armenia</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">aruba</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">australia</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">austria</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">azerbaijan</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">bahrain</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">bangladesh</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">belgio</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">benin</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">bermuda</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">birmania</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">bolivia</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">bosnia</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">botswana</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2">
+                    <a href="#">brasile</a>
+                    <i class="fas fa-times"></i>
+                </li>
+                <li class="li_2 see_more" style="display: flex; justify-content: center; align-items: center;">
+                    <a href="#" style="margin: 0px 4px 0 -10px;">see more</a>
+                    <img style="margin-top: 3px;" src="../img/down-filled-triangular-arrow.svg" height="10px"
+                        width="10px" alt="">
+                </li>
+                <div class="to_hide">
+                    <li class="li_2">
+                        <a href="#">bahrain</a>
+                        <i class="fas fa-times"></i>
+                    </li>
+                    <li class="li_2">
+                        <a href="#">oman</a>
+                        <i class="fas fa-times"></i>
+                    </li>
+                    <li class="li_2">
+                        <a href="#">qatar</a>
+                        <i class="fas fa-times"></i>
+                    </li>
+                    <li class="li_2">
+                        <a href="#">turki</a>
+                        <i class="fas fa-times"></i>
+                    </li>
+                    <li class="li_2">
+                        <a href="#">america</a>
+                        <i class="fas fa-times"></i>
+                    </li>
+                    <li class="li_2">
+                        <a href="#">india</a>
+                        <i class="fas fa-times"></i>
+                    </li>
+                    <li class="li_2">
+                        <a href="#">pakistan</a>
+                        <i class="fas fa-times"></i>
+                    </li>
+                    <li class="li_2">
+                        <a href="#">nipal</a>
+                        <i class="fas fa-times"></i>
+                    </li>
+                    <li class="li_2">
+                        <a href="#">zim</a>
+                        <i class="fas fa-times"></i>
+                    </li>
+                    <li class="li_2">
+                        <a href="#">uk</a>
+                        <i class="fas fa-times"></i>
+                    </li>
+                    <li class="li_2">
+                        <a href="#">south africa</a>
+                        <i class="fas fa-times"></i>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <nav class="header">
+        <div class="first_part">
+            <p>Risultati calcio in tempo reale, calcio in diretta</p>
+            <div class="first_part_content">
+                <div class="image_content">
+                    <a href="#">
+                        <img alt="diretta"
+                            src="https://content.livesportmedia.eu/media?name=selfpromo_bannery_registrace_it_728x90.png&amp;type=png"
+                            style="width:728px; height: 90px; ">
+                    </a>
+                    <p>Loremips</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="second_part">
+            <div class="first">
+                <a href="">
+
+                    <div class="slogan">
+
+                        <svg style="height: 40px; width:40px;" class="header__logo" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0,0,100,160" preserveAspectRatio="xMinYMid meet">
+                            <style>
+                                .st6 {
+                                    fill: #fff
+                                }
+                            </style>
+                            <g id="logo">
+                                <g id="Vrstva_5">
+                                    <defs>
+                                        <path id="SVGID_1_" d="M0 0h672v158H0z"></path>
+                                    </defs>
+                                    <clipPath id="SVGID_2_">
+                                        <use xlink:href="#SVGID_1_" overflow="visible"></use>
+                                    </clipPath>
+                                    <path
+                                        d="M129 140h1v-1h1c13-12 22-28 25-45h1v-1c0-3-3-6-6-6h-7c-3 0-5 2-6 4v1c-3 12-9 23-19 32-2 2-3 5-1 7l3 7c2 2 6 3 8 2"
+                                        clip-path="url(#SVGID_2_)" fill="#fff"></path>
+                                    <defs>
+                                        <path id="SVGID_3_" d="M0 0h672v158H0z"></path>
+                                    </defs>
+                                    <clipPath id="SVGID_4_">
+                                        <use xlink:href="#SVGID_3_" overflow="visible"></use>
+                                    </clipPath>
+                                    <path
+                                        d="M53 139l-4 7-1 4c0 2 2 3 3 3l1 1c17 6 35 6 52 0h1c3-2 4-5 3-8l-1-1-3-6c-1-2-4-3-7-2-12 4-25 4-38 0-2-1-5 0-6 2"
+                                        clip-path="url(#SVGID_4_)" fill="#fff"></path>
+                                    <defs>
+                                        <path id="SVGID_5_" d="M0 0h672v158H0z"></path>
+                                    </defs>
+                                    <clipPath id="SVGID_6_">
+                                        <use xlink:href="#SVGID_5_" overflow="visible"></use>
+                                    </clipPath>
+                                    <path
+                                        d="M106 5h-1l-1-1C87-1 69-1 52 4l-1 1-3 3c-1 1 0 3 1 5l4 6c1 2 4 3 6 2h1a60 60 0 0137 0v1c3 0 6-1 7-3l4-6c1-3 0-7-2-8"
+                                        clip-path="url(#SVGID_6_)" fill="#fff"></path>
+                                    <defs>
+                                        <path id="SVGID_7_" d="M0 0h672v158H0z"></path>
+                                    </defs>
+                                    <clipPath id="SVGID_8_">
+                                        <use xlink:href="#SVGID_7_" overflow="visible"></use>
+                                    </clipPath>
+                                    <path
+                                        d="M37 34h1c2-2 2-5 1-7l-4-6a6 6 0 00-8-2l-1 1A79 79 0 000 64v1c0 4 3 6 6 6h7c3 0 5-2 6-4v-1c2-12 9-23 18-32"
+                                        clip-path="url(#SVGID_8_)" fill="#fff"></path>
+                                    <path class="st6"
+                                        d="M39 131c1-2 1-5-1-7h-1c-9-9-16-20-18-32-1-3-3-5-6-5H6a6 6 0 00-6 7 79 79 0 0027 45v1c3 1 6 1 8-2l4-7z">
+                                    </path>
+                                    <path d="M150 10a7 7 0 00-11 0l-25 42-1 3c0 4 3 7 7 7h49l3-1c3-2 5-6 3-9l-25-42z"
+                                        fill="#e30613"></path>
+                                    <path class="st6"
+                                        d="M264 103c-1 5-5 9-10 9h-26l9-66h25c5 0 9 4 8 9l-6 48zm21-48c1-12-7-21-19-21h-38c-2 0-4 1-4 3l-11 84c0 2 1 3 3 3h38c12 0 23-9 25-21l6-48zM318 56h-18c-2 0-3 2-4 4v5c-1 2 1 3 3 3h7l-7 53c-1 2 1 3 3 3h7c2 0 4-1 4-3l8-61c1-2-1-4-3-4zM321 34h-7c-2 0-4 1-4 3l-1 7c-1 2 1 4 3 4h7c2 0 4-2 4-4l1-7c0-2-1-3-3-3zM369 56h-13c-11 0-22 10-24 21v2l-6 42c0 2 2 3 4 3h7c2 0 4-1 4-3l6-44v-2c1-4 5-7 10-7h11c2 0 3-1 4-3v-5c1-2-1-4-3-4zM471 56h-7l2-19c1-2-1-3-3-3h-7c-2 0-4 1-4 3l-3 19h-2c-2 0-4 2-4 4v5c-1 2 1 3 3 3h2l-5 35c-2 12 7 21 19 21 2 0 3-1 4-3v-6c1-1 0-3-2-3-4-1-7-5-7-9l5-35h7c2 0 4-1 4-3l1-5c0-2-1-4-3-4zM510 56h-7l2-19c0-2-1-3-3-3h-7c-2 0-4 1-4 3l-3 19h-2c-2 0-4 2-4 4l-1 5c0 2 2 3 4 3h1l-4 35c-2 12 7 21 18 21 2 0 4-1 5-3v-6l-2-3c-5-1-7-5-7-9l5-35h7c2 0 4-1 4-3l1-5c0-2-1-4-3-4zM557 103c0 5-5 9-10 9h-8c-6 0-9-4-8-9s5-9 10-9h18l-2 9zm18-26c2-11-7-21-18-21h-17c-5 0-9 2-13 4l-2 3-1 4c0 2 1 3 3 3h5l4-1h1l3-1h13c5 0 9 5 8 10l-1 4h-20c-11 0-22 9-24 21-1 12 7 21 19 21h13l12-3c0 2 1 3 3 3h2c2 0 4-1 5-3l5-44zM626 56h-18c-2 0-4 2-4 4v5c-1 2 1 3 3 3h7l-7 53c-1 2 1 3 3 3h7c2 0 4-1 4-3l8-61c1-2-1-4-3-4z">
+                                    </path>
+                                    <g>
+                                        <defs>
+                                            <path id="SVGID_9_" d="M0 0h672v158H0z"></path>
+                                        </defs>
+                                        <clipPath id="SVGID_10_">
+                                            <use xlink:href="#SVGID_9_" overflow="visible"></use>
+                                        </clipPath>
+                                        <path
+                                            d="M629 34h-7c-2 0-4 1-4 3l-1 7c-1 2 1 4 3 4h7c2 0 4-2 4-4l1-7c0-2-1-3-3-3z"
+                                            clip-path="url(#SVGID_10_)" fill="#fff"></path>
+                                        <g>
+                                            <defs>
+                                                <path id="SVGID_11_" d="M0 0h672v158H0z"></path>
+                                            </defs>
+                                            <clipPath id="SVGID_12_">
+                                                <use xlink:href="#SVGID_11_" overflow="visible"></use>
+                                            </clipPath>
+                                            <path
+                                                d="M668 56h-6l2-19c0-2-1-3-3-3h-7c-2 0-4 1-4 3l-3 19h-2c-2 0-4 2-4 4l-1 5c0 2 2 3 3 3h2l-4 35c-2 12 7 21 18 21 2 0 4-1 4-3l1-6-2-3c-5-1-7-5-7-9l5-35h7c2 0 3-1 4-3v-5c1-2-1-4-3-4z"
+                                                clip-path="url(#SVGID_12_)" fill="#fff"></path>
+                                        </g>
+                                    </g>
+                                    <path class="st6"
+                                        d="M390 77c1-5 6-9 11-9h8c5 0 9 4 8 9s-5 9-10 9h-18l1-9zm18 21c11 0 22-9 24-21s-7-21-19-21h-13c-11 0-22 10-24 21l-3 26c-2 12 6 21 18 21h17c5 0 9-1 13-4l2-3 1-3c0-2-1-4-3-4h-6l-3 1h-1l-4 1h-12c-5 0-9-4-8-9l1-5h20zM593 110h-7c-2 0-4 2-5 4v7c-1 2 1 3 3 3h7c2 0 4-1 4-3l1-7c0-2-1-4-3-4">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <h1>Diretta.it</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="second">
+                <i class="fas fa-search"></i>
+                <i class="show fa fa-phone" aria-hidden="true" style="display: none;"></i>
+                <i id="bars" class="show fas fa-bars" style="display: none;"></i>
+                <i class="fas fa-cog hide"></i>
+                <a href="#" class="hide">Accesso</a>
+
+                <button class="btn1 hide"><a href="#">REGISTRATION</a></button>
+
+            </div>
+        </div>
+        <div class="third_part">
+            <a href="#" class="button">
+                <div class="child child1">
+                    <img class="img star" src="../img/star.png" height="20px" width="20px" alt="">
+                </div>
+                <div class="child child2">
+                    <p>PREFERENCE</p>
+                </div>
+                <div class="child child3">
+                    <span>0</span>
+                </div>
+            </a>
+            <a href="#" class="button">
+                <div class="child child1">
+                    <img class="img" src="../img/football.png" height="20px" width="20px" alt="">
+                </div>
+                <div class="child child2">
+                    <p>CALCIO</p>
+                </div>
+                <div class="child child3">
+                    <span>12</span>
+                </div>
+            </a>
+            <a href="#" class="button">
+                <div class="child child1">
+                    <img class="img" src="../img/tennis.png" height="20px" width="20px" alt="">
+                </div>
+                <div class="child child2">
+                    <p>TENNIS</p>
+                </div>
+                <div class="child child3">
+                    <span>56</span>
+                </div>
+            </a>
+            <a href="#" class="button">
+                <div class="child child1">
+                    <img class="img" src="../img/basketball-ball-variant.png" height="20px" width="20px" alt="">
+                </div>
+                <div class="child child2">
+                    <p>BASKET</p>
+                </div>
+                <div class="child child3">
+                    <span>39</span>
+                </div>
+            </a>
+            <a href="#" class="button">
+                <div class="child child1">
+                    <img class="img" src="../img/hockey.png" height="20px" width="20px" alt="">
+                </div>
+                <div class="child child2">
+                    <p>HOCKEY</p>
+                </div>
+                <div class="child child3">
+                    <span>50</span>
+                </div>
+            </a>
+            <a href="#" class="button">
+                <div class="child child1">
+                    <img class="img" src="../img/golf-ball-with-dents.png" height="20px" width="20px" alt="">
+                </div>
+                <div class="child child2">
+                    <p>GOLF</p>
+                </div>
+                <div class="child child3">
+                    <span>4</span>
+                </div>
+            </a>
+            <a href="#" class="button">
+                <div class="child child1">
+                    <img class="img" src="../img/volleyball-ball.png" height="20px" width="20px" alt="">
+                </div>
+                <div class="child child2">
+                    <p>VOLLEY</p>
+                </div>
+                <div class="child child3">
+                    <span>20</span>
+                </div>
+            </a>
+            <a href="#" class="button">
+                <div class="child child1">
+                    <img class="img" style="color: white;" src="../img/baseball-ball-outline.png" height="20px"
+                        width="20px" alt="">
+                </div>
+                <div class="child child2">
+                    <p>BASEBALL</p>
+                </div>
+                <div class="child child3">
+                    <span>10</span>
+                </div>
+            </a>
+            <a href="#" class="button" style="display: none;">
+                <div class="child child1">
+                    <img class="img" style="color: white;" src="../img/baseball-ball-outline.png" height="20px"
+                        width="20px" alt="">
+                </div>
+                <div class="child child2">
+                    <p>BASEBALL</p>
+                </div>
+                <div class="child child3">
+                    <span>10</span>
+                </div>
+            </a>
+
+            <a href="#" style="margin-left: 3rem;">
+                <div class="child child1" style="padding-top: .5rem;">
+                    <img src="../img/down-filled-triangular-arrow.svg" height="20px" width="20px" alt="">
+                </div>
+                <div class="child child2">
+                    <p>MORE</p>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+
+    <section class="section_1">
+        <div class="container">
+            <div class="sub_container">
+                <div class="sidebar">
+                    <div class="upper_part">
+                        <ul style="list-style: none;">
+                            <li class="li">
+                                <img class="image" src="https://www.countryflags.io/AK/shiny/64.png" height="15px"
+                                    width="15px">
+                                <a href="#">lingu 1</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li">
+                                <img class="image" src="https://www.countryflags.io/BG/shiny/64.png" height="15px"
+                                    width="15px">
+                                <a href="#">premier league</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <a href="#" style="text-decoration: none;">
+                                <div class="centeral effects">
+
+                                </div>
+                            </a>
+                            <li
+                                style="background-color: #FFE1AF; font-family: var(--font3); font-size: .8rem;padding: .4rem; display: flex; justify-content: center; align-items: center; border-top: .7px solid rgb(202, 180, 180); border-bottom: .7px solid rgb(202, 180, 180);">
+                                <img class="img star" src="../img/star.png" height="15px" width="15px" alt="">
+                                <span style="margin-left: .3rem; color: rgb(153, 126, 126);">Mei Compaitiano</span>
+                            </li>
+                            <li class="li">
+                                <img class="image" src="https://www.countryflags.io/BL/shiny/64.png" height="15px"
+                                    width="15px">
+                                <a href="#">serie a</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li">
+                                <img class="image" src="https://www.countryflags.io/BF/shiny/64.png" height="15px"
+                                    width="15px">
+                                <a href="#">serie b</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li">
+                                <img class="image" src="https://www.countryflags.io/BQ/shiny/64.png" height="15px"
+                                    width="15px">
+                                <a href="#">coppa italia</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li">
+                                <img class="image" src="https://www.countryflags.io/CG/shiny/64.png" height="15px"
+                                    width="15px">
+                                <a href="#">eredivisie</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li">
+                                <img class="image" src="https://www.countryflags.io/CI/shiny/64.png" height="15px"
+                                    width="15px">
+                                <a href="#">laLiga</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li">
+                                <img class="image" src="https://www.countryflags.io/DE/shiny/64.png" height="15px"
+                                    width="15px">
+                                <a href="#">europei</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li">
+                                <img class="image" src="https://www.countryflags.io/ET/shiny/64.png" height="15px"
+                                    width="15px">
+                                <a href="#">champions league</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li">
+                                <img class="image" src="https://www.countryflags.io/GE/shiny/64.png" height="15px"
+                                    width="15px">
+                                <a href="#">europa league</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li">
+                                <img class="image" src="https://www.countryflags.io/HN/shiny/64.png" height="15px"
+                                    width="15px">
+                                <a href="#">mondiali</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="lower_part" style="margin-top: 1rem;">
+                        <ul>
+                            <li
+                                style="background-color: #FFE1AF; font-family: var(--font3); font-size: .8rem;padding: .4rem; display: flex; justify-content: center; align-items: center; border-top: .7px solid rgb(202, 180, 180); border-bottom: .7px solid rgb(202, 180, 180);">
+                                <img class="img star" src="../img/star.png" height="15px" width="15px" alt="">
+                                <span style="margin-left: .3rem; color: rgb(153, 126, 126);">Mei Compaitiano</span>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">albania</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">algeria</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">andorra</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">angola</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">arabia saudita</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">argentina</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">armenia</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">aruba</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">australia</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">austria</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">azerbaijan</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">bahrain</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">bangladesh</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">belgio</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">benin</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">bermuda</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">birmania</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">bolivia</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">bosnia</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">botswana</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2">
+                                <a href="#">brasile</a>
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="li_2 see_more"
+                                style="display: flex; justify-content: center; align-items: center;">
+                                <a href="#" style="margin: 0px 4px 0 -10px;">see more</a>
+                                <img style="margin-top: 3px;" src="../img/down-filled-triangular-arrow.svg"
+                                    height="10px" width="10px" alt="">
+                            </li>
+                            <div class="to_hide">
+                                <li class="li_2">
+                                    <a href="#">bahrain</a>
+                                    <i class="fas fa-times"></i>
+                                </li>
+                                <li class="li_2">
+                                    <a href="#">oman</a>
+                                    <i class="fas fa-times"></i>
+                                </li>
+                                <li class="li_2">
+                                    <a href="#">qatar</a>
+                                    <i class="fas fa-times"></i>
+                                </li>
+                                <li class="li_2">
+                                    <a href="#">turki</a>
+                                    <i class="fas fa-times"></i>
+                                </li>
+                                <li class="li_2">
+                                    <a href="#">america</a>
+                                    <i class="fas fa-times"></i>
+                                </li>
+                                <li class="li_2">
+                                    <a href="#">india</a>
+                                    <i class="fas fa-times"></i>
+                                </li>
+                                <li class="li_2">
+                                    <a href="#">pakistan</a>
+                                    <i class="fas fa-times"></i>
+                                </li>
+                                <li class="li_2">
+                                    <a href="#">nipal</a>
+                                    <i class="fas fa-times"></i>
+                                </li>
+                                <li class="li_2">
+                                    <a href="#">zim</a>
+                                    <i class="fas fa-times"></i>
+                                </li>
+                                <li class="li_2">
+                                    <a href="#">uk</a>
+                                    <i class="fas fa-times"></i>
+                                </li>
+                                <li class="li_2">
+                                    <a href="#">south africa</a>
+                                    <i class="fas fa-times"></i>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="picture">
+                    </div>
+                    <div class="after_pic">
+                        <div class="unresponsive_1">
+                            <img src="../img/football.png" height="15px" width="15px" alt="">
+                            <a href="#">Calcio</a>
+                            <i class="arrow fas fa-chevron-right"></i>
+                            <img src="https://www.countryflags.io/AU/shiny/64.png" height="15px" width="15px">
+                            <a href="#">Andorra</a>
+                        </div>
+                        <div class="unresponsive_2">
+                            <img src="https://png.pngtree.com/png-clipart/20200720/original/pngtree-yellow-retro-round-football-club-logo-png-image_4372782.jpg"
+                                alt="">
+                            <div class="border"></div>
+                            <div>
+                                <i class="far fa-star"></i>
+                                <h2>Primera Division</h2>
+                                <p>2020/2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="live_table">
+                        <div class="heading">
+                            <div>
+                                <p>Riepoligi</p>
+                                <p>Live</p>
+                                <p>Mie Partite</p>
+                                <p>Conclusi</p>
+                                <p id="programma">Programma</p>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div>
+                                <p style="margin-bottom:-2px ;">Riepoligi</p>
+                            </div>
+                        </div>
+
+                        <div class="live_table_main_content">
+                            <div>
+                                <div class="table_item">
+                                    <div class="rating">
+                                        <!-- <img src="../img/star.png" height="15px" width="15px" alt=""> -->
+                                        <i class="far fa-star" style="font-size: .9rem;"></i>
+                                    </div>
+                                    <div class="descrip">
+                                        <div style="display: flex; align-items: center;">
+                                            <img style="margin-right: .4rem;"
+                                                src="https://www.countryflags.io/LV/shiny/64.png" height="18px"
+                                                width="18px">
+                                            <div class="table_item_br_point">
+                                                <span style="text-transform: uppercase;">spanga &nbsp:</span>
+                                                <a href="#">premier league - Playoffs</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a class="blur" href="#">classifichi</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="table_item">
+                                    <div class="single_a">
+                                        <a href="#">Giorantta 4</a>
+                                    </div>
+                                </div>
+
+
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                    <p>(0 - 1)</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                    <p>(0 - 1)</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="table_item">
+                                    <div class="rating">
+                                        <!-- <img src="../img/star.png" height="15px" width="15px" alt=""> -->
+                                        <i class="far fa-star" style="font-size: .9rem;"></i>
+                                    </div>
+                                    <div class="descrip">
+                                        <div style="display: flex; align-items: center;">
+                                            <img style="margin-right: .4rem;"
+                                                src="https://www.countryflags.io/LV/shiny/64.png" height="18px"
+                                                width="18px">
+                                            <div class="table_item_br_point">
+                                                <span style="text-transform: uppercase;">spanga &nbsp:</span>
+                                                <a href="#">premier league - Playoffs</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a class="blur" href="#">classifichi</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="table_item">
+                                    <div class="single_a">
+                                        <a href="#">Giorantta 4</a>
+                                    </div>
+                                </div>
+
+
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                    <p>(0 - 1)</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                    <p>(0 - 1)</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="table_item">
+                                    <div class="rating">
+                                        <!-- <img src="../img/star.png" height="15px" width="15px" alt=""> -->
+                                        <i class="far fa-star" style="font-size: .9rem;"></i>
+                                    </div>
+                                    <div class="descrip">
+                                        <div style="display: flex; align-items: center;">
+                                            <img style="margin-right: .4rem;"
+                                                src="https://www.countryflags.io/LV/shiny/64.png" height="18px"
+                                                width="18px">
+                                            <div class="table_item_br_point">
+                                                <span style="text-transform: uppercase;">spanga &nbsp:</span>
+                                                <a href="#">premier league - Playoffs</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a class="blur" href="#">classifichi</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="table_item">
+                                    <div class="single_a">
+                                        <a href="#">Giorantta 4</a>
+                                    </div>
+                                </div>
+
+
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                    <p>(0 - 1)</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="table_item">
+                                    <div class="rating">
+                                        <!-- <img src="../img/star.png" height="15px" width="15px" alt=""> -->
+                                        <i class="far fa-star" style="font-size: .9rem;"></i>
+                                    </div>
+                                    <div class="descrip">
+                                        <div style="display: flex; align-items: center;">
+                                            <img style="margin-right: .4rem;"
+                                                src="https://www.countryflags.io/LV/shiny/64.png" height="18px"
+                                                width="18px">
+                                            <div class="table_item_br_point">
+                                                <span style="text-transform: uppercase;">spanga &nbsp:</span>
+                                                <a href="#">premier league - Playoffs</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a class="blur" href="#">classifichi</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="table_item">
+                                    <div class="single_a">
+                                        <a href="#">Giorantta 4</a>
+                                    </div>
+                                </div>
+
+
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                    <p>(0 - 1)</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                    <p>(0 - 1)</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="table_item">
+                                    <div class="rating">
+                                        <!-- <img src="../img/star.png" height="15px" width="15px" alt=""> -->
+                                        <i class="far fa-star" style="font-size: .9rem;"></i>
+                                    </div>
+                                    <div class="descrip">
+                                        <div style="display: flex; align-items: center;">
+                                            <img style="margin-right: .4rem;"
+                                                src="https://www.countryflags.io/LV/shiny/64.png" height="18px"
+                                                width="18px">
+                                            <div class="table_item_br_point">
+                                                <span style="text-transform: uppercase;">spanga &nbsp:</span>
+                                                <a href="#">premier league - Playoffs</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a class="blur" href="#">classifichi</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="table_item">
+                                    <div class="single_a">
+                                        <a href="#">Giorantta 4</a>
+                                    </div>
+                                </div>
+
+
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                    <p>(0 - 1)</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                    <p>(0 - 1)</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="heading">
+                            <div>
+                                <p style="margin-bottom:-2px ;">Programma</p>
+                            </div>
+                        </div>
+
+
+                        <div style="padding-bottom: 0px;" class="live_table_main_content">
+                            <div>
+                                <div class="table_item">
+                                    <div class="rating">
+                                        <!-- <img src="../img/star.png" height="15px" width="15px" alt=""> -->
+                                        <i class="far fa-star" style="font-size: .9rem;"></i>
+                                    </div>
+                                    <div class="descrip">
+                                        <div style="display: flex; align-items: center;">
+                                            <img style="margin-right: .4rem;"
+                                                src="https://www.countryflags.io/LV/shiny/64.png" height="18px"
+                                                width="18px">
+                                            <div class="table_item_br_point">
+                                                <span style="text-transform: uppercase;">spanga &nbsp:</span>
+                                                <a href="#">premier league - Playoffs</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a class="blur" href="#">classifichi</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="table_item">
+                                    <div class="single_a">
+                                        <a href="#">Giorantta 4</a>
+                                    </div>
+                                </div>
+
+
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="table_item">
+                                    <div class="rating">
+                                        <!-- <img src="../img/star.png" height="15px" width="15px" alt=""> -->
+                                        <i class="far fa-star" style="font-size: .9rem;"></i>
+                                    </div>
+                                    <div class="descrip">
+                                        <div style="display: flex; align-items: center;">
+                                            <img style="margin-right: .4rem;"
+                                                src="https://www.countryflags.io/LV/shiny/64.png" height="18px"
+                                                width="18px">
+                                            <div class="table_item_br_point">
+                                                <span style="text-transform: uppercase;">spanga &nbsp:</span>
+                                                <a href="#">premier league - Playoffs</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a class="blur" href="#">classifichi</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="table_item">
+                                    <div class="single_a">
+                                        <a href="#">Giorantta 4</a>
+                                    </div>
+                                </div>
+
+
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="table_item">
+                                    <div class="rating">
+                                        <!-- <img src="../img/star.png" height="15px" width="15px" alt=""> -->
+                                        <i class="far fa-star" style="font-size: .9rem;"></i>
+                                    </div>
+                                    <div class="descrip">
+                                        <div style="display: flex; align-items: center;">
+                                            <img style="margin-right: .4rem;"
+                                                src="https://www.countryflags.io/LV/shiny/64.png" height="18px"
+                                                width="18px">
+                                            <div class="table_item_br_point">
+                                                <span style="text-transform: uppercase;">spanga &nbsp:</span>
+                                                <a href="#">premier league - Playoffs</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a class="blur" href="#">classifichi</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="table_item">
+                                    <div class="single_a">
+                                        <a href="#">Giorantta 4</a>
+                                    </div>
+                                </div>
+
+
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="table_item">
+                                    <div class="rating">
+                                        <!-- <img src="../img/star.png" height="15px" width="15px" alt=""> -->
+                                        <i class="far fa-star" style="font-size: .9rem;"></i>
+                                    </div>
+                                    <div class="descrip">
+                                        <div style="display: flex; align-items: center;">
+                                            <img style="margin-right: .4rem;"
+                                                src="https://www.countryflags.io/LV/shiny/64.png" height="18px"
+                                                width="18px">
+                                            <div class="table_item_br_point">
+                                                <span style="text-transform: uppercase;">spanga &nbsp:</span>
+                                                <a href="#">premier league - Playoffs</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a class="blur" href="#">classifichi</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="table_item">
+                                    <div class="single_a">
+                                        <a href="#">Giorantta 4</a>
+                                    </div>
+                                </div>
+
+
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="table_item">
+                                    <div class="rating">
+                                        <!-- <img src="../img/star.png" height="15px" width="15px" alt=""> -->
+                                        <i class="far fa-star" style="font-size: .9rem;"></i>
+                                    </div>
+                                    <div class="descrip">
+                                        <div style="display: flex; align-items: center;">
+                                            <img style="margin-right: .4rem;"
+                                                src="https://www.countryflags.io/LV/shiny/64.png" height="18px"
+                                                width="18px">
+                                            <div class="table_item_br_point">
+                                                <span style="text-transform: uppercase;">spanga &nbsp:</span>
+                                                <a href="#">premier league - Playoffs</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a class="blur" href="#">classifichi</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="table_item">
+                                    <div class="single_a">
+                                        <a href="#">Giorantta 4</a>
+                                    </div>
+                                </div>
+
+
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div style="display: block;" class="content_to_toggle">
+                                    <div class="table_item_hidden">
+                                        <div style="border-bottom: .7px solid rgb(238, 215, 215);"
+                                            class="difficult_item">
+                                            <div class="diffi_item_first_part">
+                                                <div>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div>
+                                                    <p> 09.05. 21:30</p>
+                                                    <div>
+                                                        <p>Quilmes</p>
+                                                        <img src="https://www.countryflags.io/MF/shiny/64.png"
+                                                            height="15px" width="15px">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>3 - 4</p>
+
+                                            <div class="diffi_item_second_part">
+                                                <div>
+                                                    <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                                        width="15px">
+                                                    <p>Alvarado</p>
+                                                </div>
+                                                <div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div style="border: none;" class="heading">
+                            <div>
+                                <p style="background-color: #f0eeee; color: black;">Principle</p>
+                                <p style="background-color: #20571a; color: white;">Play-offs Championship</p>
+                                <p>Groupo Retrocessing</p>
+                            </div>
+                        </div>
+                        <div style="border: none;" class="heading">
+                            <div>
+                                <p>Riepoligi</p>
+                                <p>Forma</p>
+                                <p>Over/Under</p>
+                                <p>PT/F</p>
+                                <p id="programma">Marcatro</p>
+                            </div>
+                        </div>
+
+                        <div class="points_table">
+
+                            <div class="table_identification">
+                                <p>Total</p>
+                                <p>Casa</p> 
+                                <p>Fuori</p>
+                            </div>
+
+                            <div class="table_head" style="background-color: #E9E9E9;">
+                                <div class="flexible">
+                                    <div style="justify-content: center; align-items: center;">
+                                        <a href="#">#</a>
+                                    </div>
+                                    <div style=" justify-content: space-between; align-items: center;">
+                                        <a href="#">Squadra</a>
+                                    </div>
+                                </div>
+                                <div class="flexibl">
+                                    <div class="title"
+                                        style=" justify-content: space-between; align-items: center;">
+                                        <a href="#">PG</a>
+                                        <a href="#">V</a>
+                                        <a href="#">N</a>
+                                        <a href="#">P</a>
+                                        <a href="#">R</a>
+                                        <a href="#">P</a>
+                                    </div>
+                                    <div style="justify-content: center; align-items: center;">
+                                        <a href="#">Forma</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table_head">
+                                <div class="flexible">
+                                    <div style="background-color: #004682; justify-content: center; align-items: center; color: white;"
+                                        class="numbers">
+                                        1
+                                    </div>
+                                    <div style="align-items: center; padding-left: .8rem;">
+                                        <img src="https://www.countryflags.io/AN/shiny/64.png" height="15px"
+                                            width="15px" style="margin-right: .7rem;">
+                                        <a href="#">Squadra</a>
+                                    </div>
+                                </div>
+                                <div class="flexibl">
+                                    <div class="title_points"
+                                        style="padding: 0 .5rem; justify-content: space-between; align-items: center;">
+                                        <span>17</span>
+                                        <span>9</span>
+                                        <span>6</span>
+                                        <span>2</span>
+                                        <span>29:10</span>
+                                        <span>33</span>
+                                    </div>
+                                    <div class="points" style="justify-content: center; align-items: center;">
+                                        <span style="background-color: chartreuse;">?</span>
+                                        <span style="background-color: cornflowerblue;">N</span>
+                                        <span style="background-color: crimson;">P</span>
+                                        <span style="background-color: rgb(99, 121, 121);">V</span>
+                                        <span style="background-color: darkolivegreen;">P</span>
+                                        <span>V</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="table_head">
+                                <div class="flexible">
+                                    <div style="background-color: #7F0029; justify-content: center; align-items: center; color: white;"
+                                        class="numbers">
+                                        2
+                                    </div>
+                                    <div style="align-items: center; padding-left: .8rem;">
+                                        <img src="https://www.countryflags.io/AU/shiny/64.png" height="15px"
+                                            width="15px" style="margin-right: .7rem;">
+                                        <a href="#">Sant Julia</a>
+                                    </div>
+                                </div>
+                                <div class="flexibl">
+                                    <div class="title_points"
+                                        style="padding: 0 .5rem; justify-content: space-between; align-items: center;">
+                                        <span>13</span>
+                                        <span>4</span>
+                                        <span>6</span>
+                                        <span>2</span>
+                                        <span>39:10</span>
+                                        <span>13</span>
+                                    </div>
+                                    <div class="points" style="justify-content: center; align-items: center;">
+                                        <span style="background-color: rgb(57, 55, 207);">?</span>
+                                        <span style="background-color: cornflowerblue;">N</span>
+                                        <span style="background-color: crimson;">P</span>
+                                        <span style="background-color: rgb(99, 121, 121);">V</span>
+                                        <span style="background-color: rgb(179, 17, 71);">P</span>
+                                        <span>V</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="table_head">
+                                <div class="flexible">
+                                    <div style="justify-content: center; align-items: center;" class="numbers">
+                                        3
+                                    </div>
+                                    <div style="align-items: center; padding-left: .8rem;">
+                                        <img src="https://www.countryflags.io/AF/shiny/64.png" height="15px"
+                                            width="15px" style="margin-right: .7rem;">
+                                        <a href="#">FC Santa colma</a>
+                                    </div>
+                                </div>
+                                <div class="flexibl">
+                                    <div class="title_points"
+                                        style="padding: 0 .5rem; justify-content: space-between; align-items: center;">
+                                        <span>14</span>
+                                        <span>6</span>
+                                        <span>8</span>
+                                        <span>1</span>
+                                        <span>22:10</span>
+                                        <span>31</span>
+                                    </div>
+                                    <div class="points" style="justify-content: center; align-items: center;">
+                                        <span style="background-color: rgb(19, 160, 226);">?</span>
+                                        <span style="background-color: rgb(22, 133, 7);">N</span>
+                                        <span style="background-color: rgb(240, 106, 133);">P</span>
+                                        <span style="background-color: rgb(99, 121, 121);">V</span>
+                                        <span style="background-color: rgb(199, 211, 31);">P</span>
+                                        <span>V</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="table_head">
+                                <div class="flexible">
+                                    <div style="justify-content: center; align-items: center;" class="numbers">
+                                        4
+                                    </div>
+                                    <div style="align-items: center; padding-left: .8rem;">
+                                        <img src="https://www.countryflags.io/PK/shiny/64.png" height="15px"
+                                            width="15px" style="margin-right: .7rem;">
+                                        <a href="#">PAK</a>
+                                    </div>
+                                </div>
+                                <div class="flexibl">
+                                    <div class="title_points"
+                                        style="padding: 0 .5rem; justify-content: space-between; align-items: center;">
+                                        <span>17</span>
+                                        <span>9</span>
+                                        <span>6</span>
+                                        <span>2</span>
+                                        <span>29:10</span>
+                                        <span>33</span>
+                                    </div>
+                                    <div class="points" style="justify-content: center; align-items: center;">
+                                        <span style="background-color: chartreuse;">?</span>
+                                        <span style="background-color: cornflowerblue;">N</span>
+                                        <span style="background-color: crimson;">P</span>
+                                        <span style="background-color: rgb(99, 121, 121);">V</span>
+                                        <span style="background-color: darkolivegreen;">P</span>
+                                        <span>V</span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="last">
+                            <span></span>
+                            <span>Qualificazione - Champions League (Qualificazione)</span>
+                        </div>
+                        <div class="last">
+                            <span style="background-color: rgb(91, 91, 212);"></span>
+                            <span>Qualificazione - Europa Conference League (Qualificazione)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="leftSide">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/run.jpg" width="100%" height="400px" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/boxing.jpg" width="100%" height="400px" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/baseket.jpg" width="100%" height="400px" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        // $('.see_more').click(() => {
+        //     $('.to_hide').slideToggle(50);
+        // })
+
+
+        let menuBar = document.getElementById('menuBar');
+        console.log(menuBar);
+        let bars = document.getElementById('bars');
+        console.log(bars);
+        let a = true;
+        bars.addEventListener('click', () => {
+            if (a) {
+                menuBar.style.display = 'block';
+                a = false;
+            }
+
+            else {
+                menuBar.style.display = 'none';
+                a = true;
+            }
+        })
+        $(document).ready(() => {
+            $('.see_more').click(() => {
+                $('.to_hide').slideToggle(50);
+            })
+
+            $('.table_item').click(function () {
+                $(this).next().slideToggle();
+                if ($(this).find('.arrow_down').find('.arrow').hasClass('fa-chevron-down')) {
+
+                    $(this).find('.arrow_down').find('.arrow').addClass('fa-chevron-up').removeClass('fa-chevron-down');
+
+                }
+                else {
+                    $(this).find('.arrow_down').find('.arrow').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+                }
+            })
+        })
+
+    </script>
+</body>
+
+</html>
